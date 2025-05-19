@@ -373,7 +373,6 @@ with tab1:
                     <div class="custom-metric">
                         <h3 style="margin: 0; color: #ff8a65;">Probabilidad de malignidad</h3>
                         <p style="font-size: 1.5rem; margin: 0; color: #e0e0e0;">{y_proba[1]*100:.1f}%</p>
-                        <p style="margin: 0; font-size: 0.8rem; color: #b0b0b0;">Umbral diagnóstico: 44%</p>
                     </div>
                     """, unsafe_allow_html=True)
                 
