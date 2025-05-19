@@ -355,7 +355,7 @@ with tab1:
                 y_pred = (y_proba[1] >= 0.44).astype(int)  # Usando el umbral óptimo
                 
                 # Mostrar resultados
-                st.success("✅ Evaluación completada")
+                st.success(f"✅ Evaluación completada para el paciente: {patient_name}")
                 
                 # Tarjetas de resultados
                 col_res1, col_res2, col_res3 = st.columns(3)
@@ -433,7 +433,8 @@ with tab1:
                 - Probabilidad de malignidad: {y_proba[1]*100:.1f}%  
                 - Clasificación: {'Maligno (alto riesgo)' if y_pred == 1 else 'Benigno (bajo riesgo)'}  
                 
-                **Datos del Paciente:**  
+                **Datos del Paciente:**
+                - Nombre: {patient_name}
                 - Edad: {age} años  
                 - Género: {gender}  
                 - Tamaño del nódulo: {nodule_size} cm  
